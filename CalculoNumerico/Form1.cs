@@ -17,13 +17,19 @@ namespace CalculoNumerico
             InitializeComponent();
         }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            Application.Exit();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
             double[][] rows = new double[textBox1.Lines.Length][];
             for (int i = 0; i < rows.Length; i++)
             {
-                rows[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), double.Parse);
+                rows[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), new Converter<string, double>(Double.Parse));
             }
 
             int length = rows[0].Length;
@@ -104,6 +110,13 @@ namespace CalculoNumerico
             {
                 textBox2.Text += string.Format("X{0} = {1}\r\n", i + 1, Math.Round(result[i], 10));
             }
+        }
+
+        private void btnLagrange_Click(object sender, EventArgs e)
+        {
+            Interpolacao interpolacao = new Interpolacao();
+            this.Hide();
+            interpolacao.Show();
         }
     }
 }
