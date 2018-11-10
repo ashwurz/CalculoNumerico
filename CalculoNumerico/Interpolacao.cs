@@ -25,13 +25,28 @@ namespace CalculoNumerico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double[] xd = (double[])Array.ConvertAll(arrayX.Lines[0].Split(' '), new Converter<string, double>(Double.Parse));
-
-            double[] yd = (double[])Array.ConvertAll(arrayY.Lines[0].Split(' '), new Converter<string, double>(Double.Parse));
-
-            double x = double.Parse(valorX.Text);
-
-            resposta.Text = Convert.ToString(Lagrange(x, xd, yd));
+            try
+            {
+                double[] xd = (double[])Array.ConvertAll(arrayX.Lines[0].Split(' '), new Converter<string, double>(Double.Parse));
+                double[] yd = (double[])Array.ConvertAll(arrayY.Lines[0].Split(' '), new Converter<string, double>(Double.Parse));
+                double x = double.Parse(valorX.Text);
+                arrayX.Clear();
+                arrayY.Clear();
+                valorX.Clear();
+                resposta.Text = Convert.ToString(Lagrange(x, xd, yd));
+            }
+            catch(Exception)
+            {
+                arrayX.Clear();
+                arrayY.Clear();
+                valorX.Clear();
+                string mensagem = "Por gentileza digite somente números e seguindo o padrão de Input conforme descrito no botão de Informações!";
+                string caption = "Erro detectado no Input";
+                MessageBoxButtons boxButtons = MessageBoxButtons.OK;
+                DialogResult resultado;
+                resultado = MessageBox.Show(mensagem, caption, boxButtons);
+            }
+            
         }
 
         static public double Lagrange(double x, double[] xd, double[] yd)

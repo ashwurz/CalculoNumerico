@@ -29,7 +29,20 @@ namespace CalculoNumerico
             double[][] rows = new double[textBox1.Lines.Length][];
             for (int i = 0; i < rows.Length; i++)
             {
-                rows[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), new Converter<string, double>(Double.Parse));
+                try
+                {
+                    rows[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), new Converter<string, double>(Double.Parse));
+                }
+                catch (FormatException)
+                {
+                    textBox1.Clear();
+                    string mensagem = "Por gentileza digite somente números e seguindo o padrão de Input conforme descrito no botão de Informações!";
+                    string caption = "Erro detectado no Input";
+                    MessageBoxButtons boxButtons = MessageBoxButtons.OK;
+                    DialogResult resultado;
+                    resultado = MessageBox.Show(mensagem, caption, boxButtons);
+                    return;
+                }
             }
 
             int length = rows[0].Length;
@@ -56,7 +69,7 @@ namespace CalculoNumerico
                             }
                             if (!changed)
                             {
-                                textBox2.Text += "No Solution\r\n";
+                                textBox2.Text += "Sem Solução!\r\n";
                                 return;
                             }
                         }
@@ -96,12 +109,21 @@ namespace CalculoNumerico
                 val = rows[i][length - 1];
                 for (int x = length - 2; x > k; x--)
                 {
-                    val -= rows[i][x] * result[x];
+                    try
+                    {
+                        val -= rows[i][x] * result[x];
+                    }
+                    catch(IndexOutOfRangeException message)
+                    {
+                        textBox2.Text = "Sistema Possível e Indeterminado";
+                        textBox1.Clear();
+                        return;
+                    }
                 }
                 result[i] = val / rows[i][i];
                 if (result[i].ToString() == "NaN" || result[i].ToString().Contains("Infinity"))
                 {
-                    textBox2.Text += "No Solution Found!\n";
+                    textBox2.Text += "Sem soluçao!\n";
                     return;
                 }
                 k--;
@@ -110,6 +132,7 @@ namespace CalculoNumerico
             {
                 textBox2.Text += string.Format("X{0} = {1}\r\n", i + 1, Math.Round(result[i], 10));
             }
+            textBox1.Clear();
         }
 
         private void btnLagrange_Click(object sender, EventArgs e)
