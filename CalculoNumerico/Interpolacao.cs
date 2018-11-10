@@ -53,7 +53,7 @@ namespace CalculoNumerico
         {
             if (xd.Length != yd.Length)
             {
-                throw new ArgumentException("Arrays must be of equal length."); //$NON-NLS-1$
+                throw new ArgumentException("Os vetores devem ser de mesmo tamanho"); 
             }
             double sum = 0;
             for (int i = 0, n = xd.Length; i < n; i++)
