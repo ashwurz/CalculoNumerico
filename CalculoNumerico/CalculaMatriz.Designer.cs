@@ -44,7 +44,6 @@
             this.btnCriaResultante = new System.Windows.Forms.Button();
             this.edtR = new System.Windows.Forms.TextBox();
             this.groupBoxResultante = new System.Windows.Forms.GroupBox();
-            this.btnGerarGauss = new System.Windows.Forms.Button();
             this.btnGerarFuncaoInv = new System.Windows.Forms.Button();
             this.btnGeraMultiplica = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -219,15 +218,6 @@
             this.groupBoxResultante.TabStop = false;
             this.groupBoxResultante.Text = "Matriz Resultante";
             // 
-            // btnGerarGauss
-            // 
-            this.btnGerarGauss.Location = new System.Drawing.Point(476, 385);
-            this.btnGerarGauss.Name = "btnGerarGauss";
-            this.btnGerarGauss.Size = new System.Drawing.Size(121, 23);
-            this.btnGerarGauss.TabIndex = 41;
-            this.btnGerarGauss.Text = "Gerar Gauss";
-            this.btnGerarGauss.UseVisualStyleBackColor = true;
-            // 
             // btnGerarFuncaoInv
             // 
             this.btnGerarFuncaoInv.Location = new System.Drawing.Point(476, 356);
@@ -256,7 +246,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGeraMultiplica);
             this.Controls.Add(this.btnGerarFuncaoInv);
-            this.Controls.Add(this.btnGerarGauss);
             this.Controls.Add(this.groupBoxResultante);
             this.Controls.Add(this.btnCriaResultante);
             this.Controls.Add(this.edtR);
@@ -298,7 +287,6 @@
         private System.Windows.Forms.Button btnCriaResultante;
         private System.Windows.Forms.TextBox edtR;
         private System.Windows.Forms.GroupBox groupBoxResultante;
-        private System.Windows.Forms.Button btnGerarGauss;
         private System.Windows.Forms.Button btnGerarFuncaoInv;
         private System.Windows.Forms.Button btnGeraMultiplica;
     }
