@@ -36,6 +36,7 @@
             this.btnLagrange = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnInfo = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,12 +111,23 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Valores de entrada";
             // 
+            // btnInfo
+            // 
+            this.btnInfo.Image = global::CalculoNumerico.Properties.Resources._129_128;
+            this.btnInfo.Location = new System.Drawing.Point(712, 27);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(76, 90);
+            this.btnInfo.TabIndex = 23;
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnLagrange;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnInfo;
     }
 }
 
