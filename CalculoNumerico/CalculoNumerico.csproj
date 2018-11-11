@@ -46,19 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="CalculaMatriz.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalculaMatriz.Designer.cs">
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-||||||| merged common ancestors
-    <Compile Include="Form1.cs">
-=======
     <Compile Include="Telas\Form1.cs">
->>>>>>> 364d0881f6940025b4ff3386a16663f8c1b05fd2
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Form1.Designer.cs">
@@ -85,16 +79,10 @@
     <Compile Include="Matriz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <EmbeddedResource Include="CalculaMatriz.resx">
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-||||||| merged common ancestors
-    <EmbeddedResource Include="Form1.resx">
-=======
     <EmbeddedResource Include="Telas\Form1.resx">
->>>>>>> 364d0881f6940025b4ff3386a16663f8c1b05fd2
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Informacao.resx">
