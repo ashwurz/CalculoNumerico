@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalculoNumerico.Telas;
 
 namespace CalculoNumerico
 {
@@ -26,111 +27,111 @@ namespace CalculoNumerico
         private void button1_Click(object sender, EventArgs e)
         {
             textBox2.Clear();
-            double[][] rows = new double[textBox1.Lines.Length][];
-            for (int i = 0; i < rows.Length; i++)
+            double[][] linhas = new double[textBox1.Lines.Length][];
+            for (int i = 0; i < linhas.Length; i++)
             {
                 try
                 {
-                    rows[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), new Converter<string, double>(Double.Parse));
+                    linhas[i] = (double[])Array.ConvertAll(textBox1.Lines[i].Split(' '), new Converter<string, double>(Double.Parse));
                 }
-                catch (FormatException)
+                catch (Exception)
                 {
                     textBox1.Clear();
                     string mensagem = "Por gentileza digite somente números e seguindo o padrão de Input conforme descrito no botão de Informações!";
                     string caption = "Erro detectado no Input";
                     MessageBoxButtons boxButtons = MessageBoxButtons.OK;
-                    DialogResult resultado;
-                    resultado = MessageBox.Show(mensagem, caption, boxButtons);
+                    DialogResult resultado1;
+                    resultado1 = MessageBox.Show(mensagem, caption, boxButtons);
                     return;
                 }
             }
 
-            int length = rows[0].Length;
-            for (int i = 0; i < rows.Length - 1; i++)
+            int tamanho = linhas[0].Length;
+            for (int i = 0; i < linhas.Length - 1; i++)
             {
-                for (int j = i; j < rows.Length; j++)
+                for (int j = i; j < linhas.Length; j++)
                 {
-                    double[] d = new double[length];
-                    for (int x = 0; x < length; x++)
+                    double[] d = new double[tamanho];
+                    for (int x = 0; x < tamanho; x++)
                     {
-                        if (i == j && rows[j][i] == 0)
+                        if (i == j && linhas[j][i] == 0)
                         {
-                            bool changed = false;
-                            for (int z = rows.Length - 1; z > i; z--)
+                            bool mudou = false;
+                            for (int z = linhas.Length - 1; z > i; z--)
                             {
-                                if (rows[z][i] != 0)
+                                if (linhas[z][i] != 0)
                                 {
-                                    double[] temp = new double[length];
-                                    temp = rows[z];
-                                    rows[z] = rows[j];
-                                    rows[j] = temp;
-                                    changed = true;
+                                    double[] temp = new double[tamanho];
+                                    temp = linhas[z];
+                                    linhas[z] = linhas[j];
+                                    linhas[j] = temp;
+                                    mudou = true;
                                 }
                             }
-                            if (!changed)
+                            if (!mudou)
                             {
                                 textBox2.Text += "Sem Solução!\r\n";
                                 return;
                             }
                         }
-                        if (rows[j][i] != 0)
+                        if (linhas[j][i] != 0)
                         {
-                            d[x] = rows[j][x] / rows[j][i];
+                            d[x] = linhas[j][x] / linhas[j][i];
                         }
                         else
                         {
-                            d[x] = rows[j][x];
+                            d[x] = linhas[j][x];
                         }
                     }
-                    rows[j] = d;
+                    linhas[j] = d;
                 }
-                for (int y = i + 1; y < rows.Length; y++)
+                for (int y = i + 1; y < linhas.Length; y++)
                 {
-                    double[] f = new double[length];
-                    for (int g = 0; g < length; g++)
+                    double[] f = new double[tamanho];
+                    for (int g = 0; g < tamanho; g++)
                     {
-                        if (rows[y][i] != 0)
+                        if (linhas[y][i] != 0)
                         {
-                            f[g] = rows[y][g] - rows[i][g];
+                            f[g] = linhas[y][g] - linhas[i][g];
                         }
                         else
                         {
-                            f[g] = rows[y][g];
+                            f[g] = linhas[y][g];
                         }
                     }
-                    rows[y] = f;
+                    linhas[y] = f;
                 }
             }
             double val = 0;
-            int k = length - 2;
-            double[] result = new double[rows.Length];
-            for (int i = rows.Length - 1; i >= 0; i--)
+            int k = tamanho - 2;
+            double[] resultado = new double[linhas.Length];
+            for (int i = linhas.Length - 1; i >= 0; i--)
             {
-                val = rows[i][length - 1];
-                for (int x = length - 2; x > k; x--)
+                val = linhas[i][tamanho - 1];
+                for (int x = tamanho - 2; x > k; x--)
                 {
                     try
                     {
-                        val -= rows[i][x] * result[x];
+                        val -= linhas[i][x] * resultado[x];
                     }
-                    catch(IndexOutOfRangeException message)
+                    catch(IndexOutOfRangeException)
                     {
                         textBox2.Text = "Sistema Possível e Indeterminado";
                         textBox1.Clear();
                         return;
                     }
                 }
-                result[i] = val / rows[i][i];
-                if (result[i].ToString() == "NaN" || result[i].ToString().Contains("Infinity"))
+                resultado[i] = val / linhas[i][i];
+                if (resultado[i].ToString() == "NaN" || resultado[i].ToString().Contains("Infinity"))
                 {
                     textBox2.Text += "Sem soluçao!\n";
                     return;
                 }
                 k--;
             }
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < resultado.Length; i++)
             {
-                textBox2.Text += string.Format("X{0} = {1}\r\n", i + 1, Math.Round(result[i], 10));
+                textBox2.Text += string.Format("X{0} = {1}\r\n", i + 1, Math.Round(resultado[i], 10));
             }
             textBox1.Clear();
         }
@@ -147,6 +148,12 @@ namespace CalculoNumerico
             CalculaMatriz matrizes = new CalculaMatriz();
             this.Hide();
             matrizes.Show();
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            Informacao informacao = new Informacao();
+            informacao.Show();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalculoNumerico.Telas;
 
 namespace CalculoNumerico
 {
@@ -88,6 +89,12 @@ namespace CalculoNumerico
             CalculaMatriz matrizes = new CalculaMatriz();
             this.Hide();
             matrizes.Show();
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            Informacao2 informacao = new Informacao2();
+            informacao.Show();
         }
     }
 }

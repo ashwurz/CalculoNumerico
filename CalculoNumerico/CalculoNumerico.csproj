@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="CalculaMatriz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,27 +54,56 @@
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
+||||||| merged common ancestors
+    <Compile Include="Form1.cs">
+=======
+    <Compile Include="Telas\Form1.cs">
+>>>>>>> 364d0881f6940025b4ff3386a16663f8c1b05fd2
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Telas\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interpolacao.cs">
+    <Compile Include="Telas\Informacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interpolacao.Designer.cs">
+    <Compile Include="Telas\Informacao.Designer.cs">
+      <DependentUpon>Informacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Informacao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Informacao2.Designer.cs">
+      <DependentUpon>Informacao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Interpolacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Interpolacao.Designer.cs">
       <DependentUpon>Interpolacao.cs</DependentUpon>
     </Compile>
     <Compile Include="Matriz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="CalculaMatriz.resx">
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
+||||||| merged common ancestors
+    <EmbeddedResource Include="Form1.resx">
+=======
+    <EmbeddedResource Include="Telas\Form1.resx">
+>>>>>>> 364d0881f6940025b4ff3386a16663f8c1b05fd2
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interpolacao.resx">
+    <EmbeddedResource Include="Telas\Informacao.resx">
+      <DependentUpon>Informacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Informacao2.resx">
+      <DependentUpon>Informacao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Interpolacao.resx">
       <DependentUpon>Interpolacao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -84,6 +114,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -99,11 +130,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="Telas\" />
+    <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Classes\39963_calculator.ico" />
+    <None Include="Images\129-128.png" />
+    <Content Include="Images\39963_calculator.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
