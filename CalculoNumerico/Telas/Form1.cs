@@ -143,17 +143,17 @@ namespace CalculoNumerico
             interpolacao.Show();
         }
 
-        private void calcularMatrizToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CalculaMatriz matrizes = new CalculaMatriz();
-            this.Hide();
-            matrizes.Show();
-        }
-
         private void btnInfo_Click(object sender, EventArgs e)
         {
             Informacao informacao = new Informacao();
             informacao.Show();
+        }
+
+        private void funçãoInversaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculaMatriz matriz = new CalculaMatriz();
+            this.Hide();
+            matriz.Show();
         }
     }
 }

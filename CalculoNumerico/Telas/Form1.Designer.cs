@@ -36,8 +36,9 @@
             this.btnLagrange = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.calcularMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.sistemasLinearesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnLagrange,
-            this.calcularMatrizToolStripMenuItem});
+            this.sistemasLinearesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -113,15 +114,6 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Valores de entrada";
             // 
-            // calcularMatrizToolStripMenuItem
-            // 
-            this.calcularMatrizToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.calcularMatrizToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.calcularMatrizToolStripMenuItem.Name = "calcularMatrizToolStripMenuItem";
-            this.calcularMatrizToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.calcularMatrizToolStripMenuItem.Text = "Calcular Matriz";
-            this.calcularMatrizToolStripMenuItem.Click += new System.EventHandler(this.calcularMatrizToolStripMenuItem_Click);
-            // 
             // btnInfo
             // 
             this.btnInfo.Image = global::CalculoNumerico.Properties.Resources._129_128;
@@ -131,6 +123,22 @@
             this.btnInfo.TabIndex = 23;
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // sistemasLinearesToolStripMenuItem
+            // 
+            this.sistemasLinearesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.funçãoInversaToolStripMenuItem});
+            this.sistemasLinearesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.sistemasLinearesToolStripMenuItem.Name = "sistemasLinearesToolStripMenuItem";
+            this.sistemasLinearesToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
+            this.sistemasLinearesToolStripMenuItem.Text = "Sistemas Lineares";
+            // 
+            // funçãoInversaToolStripMenuItem
+            // 
+            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
+            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
+            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -149,7 +157,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistemas Lineares";
+            this.Text = "Sistemas Lineares - Método de Gauss";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -166,8 +174,9 @@
         private System.Windows.Forms.ToolStripMenuItem btnLagrange;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ToolStripMenuItem calcularMatrizToolStripMenuItem;
         private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.ToolStripMenuItem sistemasLinearesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funçãoInversaToolStripMenuItem;
     }
 }
 

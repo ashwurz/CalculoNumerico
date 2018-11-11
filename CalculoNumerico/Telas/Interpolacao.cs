@@ -79,22 +79,26 @@ namespace CalculoNumerico
 
         private void btnSistemas_Click(object sender, EventArgs e)
         {
-            Form1 sistemas = new Form1();
-            this.Hide();
-            sistemas.Show();
-        }
-
-        private void calcularMatrizToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CalculaMatriz matrizes = new CalculaMatriz();
-            this.Hide();
-            matrizes.Show();
         }
 
         private void btnInfo_Click(object sender, EventArgs e)
         {
             Informacao2 informacao = new Informacao2();
             informacao.Show();
+        }
+
+        private void gaussToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 gauss = new Form1();
+            this.Hide();
+            gauss.Show();
+        }
+
+        private void funçãoInversaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculaMatriz matriz = new CalculaMatriz();
+            this.Hide();
+            matriz.Show();
         }
     }
 }

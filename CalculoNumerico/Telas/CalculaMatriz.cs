@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalculoNumerico.Telas;
 
 namespace CalculoNumerico
 {
@@ -32,9 +33,6 @@ namespace CalculoNumerico
 
         private void btnSistemas_Click(object sender, EventArgs e)
         {
-            Form1 sistemas = new Form1();
-            this.Hide();
-            sistemas.Show();
         }
 
         private TextBox[,] Matriz;
@@ -351,6 +349,19 @@ namespace CalculoNumerico
                     groupBoxResultante.Controls.Add(MatrizResultado[x, y]);
                 }
             }
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            Informacao3 informacao = new Informacao3();
+            informacao.Show();
+        }
+
+        private void métodoDeGaussToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 gauss = new Form1();
+            this.Hide();
+            gauss.Show();
         }
 
         private void btnCriarMatriz_Click(object sender, EventArgs e)

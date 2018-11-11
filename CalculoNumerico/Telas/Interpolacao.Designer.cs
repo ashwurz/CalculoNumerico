@@ -40,8 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.calcularMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInfo = new System.Windows.Forms.Button();
+            this.gaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,8 +89,7 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSistemas,
-            this.calcularMatrizToolStripMenuItem});
+            this.btnSistemas});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -99,6 +99,9 @@
             // btnSistemas
             // 
             this.btnSistemas.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSistemas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gaussToolStripMenuItem,
+            this.funçãoInversaToolStripMenuItem});
             this.btnSistemas.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.btnSistemas.ForeColor = System.Drawing.Color.Black;
             this.btnSistemas.Name = "btnSistemas";
@@ -150,15 +153,6 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Resultado";
             // 
-            // calcularMatrizToolStripMenuItem
-            // 
-            this.calcularMatrizToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.calcularMatrizToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.calcularMatrizToolStripMenuItem.Name = "calcularMatrizToolStripMenuItem";
-            this.calcularMatrizToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.calcularMatrizToolStripMenuItem.Text = "Calcular Matriz";
-            this.calcularMatrizToolStripMenuItem.Click += new System.EventHandler(this.calcularMatrizToolStripMenuItem_Click);
-            // 
             // btnInfo
             // 
             this.btnInfo.Image = global::CalculoNumerico.Properties.Resources._129_128;
@@ -168,6 +162,20 @@
             this.btnInfo.TabIndex = 24;
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // gaussToolStripMenuItem
+            // 
+            this.gaussToolStripMenuItem.Name = "gaussToolStripMenuItem";
+            this.gaussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gaussToolStripMenuItem.Text = "Gauss";
+            this.gaussToolStripMenuItem.Click += new System.EventHandler(this.gaussToolStripMenuItem_Click);
+            // 
+            // funçãoInversaToolStripMenuItem
+            // 
+            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
+            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
+            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
             // 
             // Interpolacao
             // 
@@ -211,7 +219,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ToolStripMenuItem calcularMatrizToolStripMenuItem;
         private System.Windows.Forms.Button btnInfo;
+        private System.Windows.Forms.ToolStripMenuItem gaussToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funçãoInversaToolStripMenuItem;
     }
 }

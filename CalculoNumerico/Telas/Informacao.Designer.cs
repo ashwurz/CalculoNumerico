@@ -95,7 +95,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 94);
+            this.label4.Location = new System.Drawing.Point(13, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(287, 13);
             this.label4.TabIndex = 4;
@@ -116,10 +116,10 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(605, 13);
+            this.label7.Size = new System.Drawing.Size(611, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Na TextBox deValores de Entradatem que ser passado os coeficientes das incónitas " +
-    "e o valor da solução da referida equação.";
+            this.label7.Text = "Na TextBox de Valores de Entrada tem que ser passado os coeficientes das incónita" +
+    "s e o valor da solução da referida equação.";
             // 
             // label6
             // 
@@ -252,6 +252,7 @@
             this.MaximizeBox = false;
             this.Name = "Informacao";
             this.Text = "Informações Sistema Linear";
+            this.Load += new System.EventHandler(this.Informacao_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

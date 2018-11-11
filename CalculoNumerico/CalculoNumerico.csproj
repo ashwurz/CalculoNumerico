@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculaMatriz.cs">
+    <Compile Include="Telas\CalculaMatriz.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculaMatriz.Designer.cs">
+    <Compile Include="Telas\CalculaMatriz.Designer.cs">
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Form1.cs">
@@ -70,16 +70,22 @@
     <Compile Include="Telas\Informacao2.Designer.cs">
       <DependentUpon>Informacao2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Informacao3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Informacao3.Designer.cs">
+      <DependentUpon>Informacao3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Interpolacao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Interpolacao.Designer.cs">
       <DependentUpon>Interpolacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Matriz.cs" />
+    <Compile Include="Classes\Matriz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CalculaMatriz.resx">
+    <EmbeddedResource Include="Telas\CalculaMatriz.resx">
       <DependentUpon>CalculaMatriz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Form1.resx">
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Informacao2.resx">
       <DependentUpon>Informacao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Informacao3.resx">
+      <DependentUpon>Informacao3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Interpolacao.resx">
       <DependentUpon>Interpolacao.cs</DependentUpon>
@@ -117,9 +126,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Images\129-128.png" />
     <Content Include="Images\39963_calculator.ico" />

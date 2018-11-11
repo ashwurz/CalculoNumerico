@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CalculoNumerico.Telas
 {
-    public partial class Informacao : Form
+    public partial class Informacao3 : Form
     {
-        public Informacao()
+        public Informacao3()
         {
             InitializeComponent();
         }
 
-        private void Informacao_Load(object sender, EventArgs e)
+        private void Informacao3_Load(object sender, EventArgs e)
         {
 
         }
