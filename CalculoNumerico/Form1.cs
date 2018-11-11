@@ -141,5 +141,12 @@ namespace CalculoNumerico
             this.Hide();
             interpolacao.Show();
         }
+
+        private void calcularMatrizToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculaMatriz matrizes = new CalculaMatriz();
+            this.Hide();
+            matrizes.Show();
+        }
     }
 }

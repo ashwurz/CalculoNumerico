@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.calcularMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +87,8 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSistemas});
+            this.btnSistemas,
+            this.calcularMatrizToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -147,6 +149,15 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "Resultado";
             // 
+            // calcularMatrizToolStripMenuItem
+            // 
+            this.calcularMatrizToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.calcularMatrizToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.calcularMatrizToolStripMenuItem.Name = "calcularMatrizToolStripMenuItem";
+            this.calcularMatrizToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.calcularMatrizToolStripMenuItem.Text = "Calcular Matriz";
+            this.calcularMatrizToolStripMenuItem.Click += new System.EventHandler(this.calcularMatrizToolStripMenuItem_Click);
+            // 
             // Interpolacao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,5 +199,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem calcularMatrizToolStripMenuItem;
     }
 }

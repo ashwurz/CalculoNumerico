@@ -82,5 +82,12 @@ namespace CalculoNumerico
             this.Hide();
             sistemas.Show();
         }
+
+        private void calcularMatrizToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CalculaMatriz matrizes = new CalculaMatriz();
+            this.Hide();
+            matrizes.Show();
+        }
     }
 }

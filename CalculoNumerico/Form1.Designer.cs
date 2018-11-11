@@ -36,6 +36,7 @@
             this.btnLagrange = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.calcularMatrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,7 +72,8 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnLagrange});
+            this.btnLagrange,
+            this.calcularMatrizToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -110,6 +112,15 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Valores de entrada";
             // 
+            // calcularMatrizToolStripMenuItem
+            // 
+            this.calcularMatrizToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.calcularMatrizToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.calcularMatrizToolStripMenuItem.Name = "calcularMatrizToolStripMenuItem";
+            this.calcularMatrizToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.calcularMatrizToolStripMenuItem.Text = "Calcular Matriz";
+            this.calcularMatrizToolStripMenuItem.Click += new System.EventHandler(this.calcularMatrizToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +154,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnLagrange;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem calcularMatrizToolStripMenuItem;
     }
 }
 
