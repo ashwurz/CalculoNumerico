@@ -36,13 +36,13 @@
             this.resposta = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnSistemas = new System.Windows.Forms.ToolStripMenuItem();
+            this.gaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.gaussToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +109,22 @@
             this.btnSistemas.Text = "Sistemas Lineares";
             this.btnSistemas.Click += new System.EventHandler(this.btnSistemas_Click);
             // 
+            // gaussToolStripMenuItem
+            // 
+            this.gaussToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.gaussToolStripMenuItem.Name = "gaussToolStripMenuItem";
+            this.gaussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gaussToolStripMenuItem.Text = "Gauss";
+            this.gaussToolStripMenuItem.Click += new System.EventHandler(this.gaussToolStripMenuItem_Click);
+            // 
+            // funçãoInversaToolStripMenuItem
+            // 
+            this.funçãoInversaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
+            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
+            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -162,20 +178,6 @@
             this.btnInfo.TabIndex = 24;
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
-            // 
-            // gaussToolStripMenuItem
-            // 
-            this.gaussToolStripMenuItem.Name = "gaussToolStripMenuItem";
-            this.gaussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gaussToolStripMenuItem.Text = "Gauss";
-            this.gaussToolStripMenuItem.Click += new System.EventHandler(this.gaussToolStripMenuItem_Click);
-            // 
-            // funçãoInversaToolStripMenuItem
-            // 
-            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
-            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
-            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
             // 
             // Interpolacao
             // 

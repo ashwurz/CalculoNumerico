@@ -87,8 +87,9 @@
             // 
             // métodoDeGaussToolStripMenuItem
             // 
+            this.métodoDeGaussToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.métodoDeGaussToolStripMenuItem.Name = "métodoDeGaussToolStripMenuItem";
-            this.métodoDeGaussToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.métodoDeGaussToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.métodoDeGaussToolStripMenuItem.Text = "Método de Gauss";
             this.métodoDeGaussToolStripMenuItem.Click += new System.EventHandler(this.métodoDeGaussToolStripMenuItem_Click);
             // 

@@ -34,11 +34,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnLagrange = new System.Windows.Forms.ToolStripMenuItem();
+            this.sistemasLinearesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnInfo = new System.Windows.Forms.Button();
-            this.sistemasLinearesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.funçãoInversaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,6 +92,24 @@
             this.btnLagrange.Text = "Interpolação";
             this.btnLagrange.Click += new System.EventHandler(this.btnLagrange_Click);
             // 
+            // sistemasLinearesToolStripMenuItem
+            // 
+            this.sistemasLinearesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.funçãoInversaToolStripMenuItem});
+            this.sistemasLinearesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.sistemasLinearesToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.sistemasLinearesToolStripMenuItem.Name = "sistemasLinearesToolStripMenuItem";
+            this.sistemasLinearesToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
+            this.sistemasLinearesToolStripMenuItem.Text = "Sistemas Lineares";
+            // 
+            // funçãoInversaToolStripMenuItem
+            // 
+            this.funçãoInversaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
+            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
+            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -123,22 +141,6 @@
             this.btnInfo.TabIndex = 23;
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
-            // 
-            // sistemasLinearesToolStripMenuItem
-            // 
-            this.sistemasLinearesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.funçãoInversaToolStripMenuItem});
-            this.sistemasLinearesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.sistemasLinearesToolStripMenuItem.Name = "sistemasLinearesToolStripMenuItem";
-            this.sistemasLinearesToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
-            this.sistemasLinearesToolStripMenuItem.Text = "Sistemas Lineares";
-            // 
-            // funçãoInversaToolStripMenuItem
-            // 
-            this.funçãoInversaToolStripMenuItem.Name = "funçãoInversaToolStripMenuItem";
-            this.funçãoInversaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.funçãoInversaToolStripMenuItem.Text = "Função Inversa";
-            this.funçãoInversaToolStripMenuItem.Click += new System.EventHandler(this.funçãoInversaToolStripMenuItem_Click);
             // 
             // Form1
             // 
