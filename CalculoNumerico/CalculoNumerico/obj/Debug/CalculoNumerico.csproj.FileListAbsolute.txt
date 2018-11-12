@@ -1,0 +1,15 @@
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\bin\Debug\CalculoNumerico.exe.config
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\bin\Debug\CalculoNumerico.exe
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\bin\Debug\CalculoNumerico.pdb
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.csprojAssemblyReference.cache
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Form1.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Properties.Resources.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.csproj.GenerateResource.cache
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.csproj.CoreCompileInputs.cache
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.exe
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.pdb
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Interpolacao.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Telas.Informacao.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Telas.Informacao2.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.CalculaMatriz.resources
+C:\Users\Helmuth\source\repos\CalculoNumerico\CalculoNumerico\obj\Debug\CalculoNumerico.Telas.Informacao3.resources
